@@ -24,3 +24,11 @@ Configurable:
 Build, then place ROM files in the same directory as `.exe`. 
 
 ROM files are easily found via search engine, and should be named: `invaders.e`, `invaders.f`, `invaders.g`, `invaders.h	`.
+
+Keys:
+
+* `z` left
+* `x` right
+* `enter` fire
+* `c` insert coin
+* `1` player-one start
