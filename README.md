@@ -10,6 +10,8 @@ Full Intel 8080 emulaton, passing third-party machine-code tests:
 * "MICROCOSM ASSOCIATES  8080/8085 CPU DIAGNOSTIC VERSION 1.0  1980",
 * something called "CPUTEST.COM", which I don't know the title of
 
+Janky sound implementation via `WAV` files played through win32 MCI.
+
 Configurable:
 
 * emulator speed,
