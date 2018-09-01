@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="8080EX1.COM" />
+    <None Remove="8080EX1.MAC.asm.txt" />
+    <None Remove="8080PRE.COM" />
+    <None Remove="8080PRE.MAC.asm.txt" />
+    <None Remove="cpudiag.asm.txt" />
+    <None Remove="cpudiag.bin" />
+    <None Remove="CPUTEST.COM" />
+    <None Remove="TEST.ASM" />
+    <None Remove="TEST.COM" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="8080EX1.COM" />
+    <EmbeddedResource Include="8080EX1.MAC.asm.txt" />
+    <EmbeddedResource Include="8080PRE.COM" />
+    <EmbeddedResource Include="8080PRE.MAC.asm.txt" />
+    <EmbeddedResource Include="cpudiag.bin" />
+    <EmbeddedResource Include="cpudiag.asm.txt" />
+    <EmbeddedResource Include="CPUTEST.COM" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Intel8080\Intel8080.csproj" />
+  </ItemGroup>
+
+</Project>
